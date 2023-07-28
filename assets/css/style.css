@@ -1,0 +1,274 @@
+/*
+ * JiaJia Chen
+ * ISTE-340
+ * Professor Goldman
+ * 3/7/2021
+*/
+
+
+/* css for body */
+body{
+	color: black;
+	background-color:  #ccefff;
+	font-style: cursive;
+	text-align:center;
+	background-image: url("../sky.jpg");
+}
+
+/* css for the all anime image gallery ob top of the page*/
+#slideshow{
+width: 60%;
+height: 250px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+/*css for the word 'image gallery' on top of the page*/
+#picc{
+color:#ffffcc;
+font-size: 20px;
+font-family: 'Helvetica Neue', sans-serif; 
+font-weight: bold; 
+
+}
+
+/*css for the input name*/
+input[type=text] {
+    width: 150px;
+    height: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #555;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffcc;	
+}
+
+/*css for the submit button*/
+input[type=submit] {
+        background-color: #ffffcc;
+        border: 3px solid #555;
+    	border-radius: 4px;
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        margin: 50px 40px;
+        cursor: pointer;
+	transition-duration: 0.3s;
+      }
+/*css when user hover the button, it will change color*/
+input[type=submit]:hover {
+  background-color: pink;
+  color: white;
+}
+
+/*css for heading 2*/
+h2 {
+    	text-align: center;
+	padding-top: 20px;
+	font-family: 'Helvetica Neue', sans-serif; 
+	font-weight: bold; 
+	color: #005c99;
+}
+
+/*css for the clear button*/
+#clear{
+	background-color: #ffffcc;
+        border: 3px solid #555;
+    	border-radius: 4px;
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        margin: 50px 100px;
+        cursor: pointer;
+	transition-duration: 0.3s;
+
+}
+
+/*change color when user hover the clear button*/
+#clear:hover {
+  background-color: pink;
+  color: white;
+}
+
+/*change the size of the video*/
+.videoSize{
+width: 350px;
+height: 350px;
+}
+
+/*css for the section selector*/
+#formId{
+	
+	background-color: pink;	
+	background: rgba(240,248,255,0.8);
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+/*css for the images*/
+.pic{
+	vertical-align: middle;
+	position: absolute;
+    -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;   
+    width: 400px;
+    height: auto; 
+right: 10px;
+left:10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+margin-top:30px;
+
+}
+
+/*css for the heading 1*/
+h1{
+
+Color: #005c99;
+text-align: center;
+font-family: 'Helvetica Neue', sans-serif; 
+font-weight: bold; 
+letter-spacing: -1px;
+line-height: 1;
+font-size: 40px;
+}
+
+/*css for the heading 4*/
+h4{
+Color: #ffffcc;
+font-family: 'Helvetica Neue', sans-serif; 
+font-weight: bold; 
+letter-spacing: -1px;
+line-height: 1;
+font-size: 30px;
+}
+
+/*css for the paragraph*/
+p{
+font-family: 'Helvetica Neue', sans-serif;
+font-size: 15px;
+color:#ffffcc;
+}
+	
+/*css for the selectDiv, selector*/
+#selectDiv{
+position: relative;
+  height: 650px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/*css for the first to third img, align posotion*/
+.pix:nth:child(1){
+    z-index: 3;
+}
+.pic:nth-child(2){
+    z-index: 1;
+}
+.pic:nth-child(3){
+    z-index: 2;
+}
+
+
+
+/*effect when hover*/
+.pic-container:hover .pic:nth-child(1)
+{
+    -webkit-transform: rotate(15deg);
+     transform: rotate(15deg);
+    
+    -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+
+/*effect when hover, degree change*/
+.pic-container:hover .pic:nth-child(2){
+    -webkit-transform: rotate(7deg);
+     transform: rotate(7deg);
+     
+    -webkit-transition: all 0.10s ease;
+     transition: all 0.10s ease;
+}
+
+/*hover change degree*/
+.pic-container:hover .pic:nth-child(3){
+    -webkit-transform: rotate(-5deg);
+     transform: rotate(-5deg);
+}
+
+.pic-container:hover{
+    center:50px;
+  
+    -webkit-opacity: 1;
+    opacity: 1;
+}
+
+
+
+/*Think about when the screen less than 1020px*/
+@media only screen and (max-width: 1020px) {
+#slideshow{
+width:auto;
+height:300px;
+}
+
+
+}
+
+/*Think about when the screen less than 900px*/
+@media only screen and (max-width: 900px) {
+#formId{
+	
+	background-color: yellow;	
+	background: rgba(255,255,224,0.8);
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+}
+/*Think about when the screen less than 600px*/
+@media only screen and (max-width: 600px) {
+#formId{
+	
+	background-color: yellow;	
+	background: rgba(240,248,255,0.8);
+	margin-left: 10%;
+	margin-right: 10%;
+}
+/*change the size of the video*/
+.videoSize{
+width: 60%;
+height: 200px;
+}
+
+.pic{
+width:200px;
+height:auto;
+
+}
+#slideshow{
+width:auto;
+height:150px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
